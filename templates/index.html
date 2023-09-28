@@ -31,11 +31,14 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
+        // Javascript code
         var audioPlayed = false;
         var startTime = 0;
         var wordCount = 0;
         var audioElement = document.getElementById('audioElement');
-    
+
+
+        //Script to play the userinput translated text to speech audio
         function startAudio() {
             if (!audioPlayed) {
                 const audio = document.getElementById('audioElement');
@@ -47,11 +50,15 @@
                 wordCount = 0; // Reset word count
             }
         }
+
+
     // Function to change the playback speed
     function changeSpeed(speed) {
             audioElement.playbackRate = speed;
         }
-        // Function to calculate typing speed
+
+        
+        // Fuction to calculate typing speed
         function calculateTypingSpeed() {
             if (audioPlayed) {
                 const endTime = new Date().getTime();
@@ -65,7 +72,7 @@
             }
         }
     
-        // Add event listener to the textarea for real-time speed calculation
+        // Adding event listener to the textarea for real-time speed calculatio
         document.getElementById('text').addEventListener('input', calculateTypingSpeed);
     </script>
     
