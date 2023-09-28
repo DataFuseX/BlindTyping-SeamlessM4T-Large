@@ -1,0 +1,20 @@
+/* CSS for mobile devices with a maximum width of 767px */
+@media only screen and (min-height: 851px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+   .tile {
+    font-size : 70px;
+   }
+   p {
+    font-size: 70px;
+   }
+   .area1 {
+    width: 100%;
+    cols: 10; /* Adjust the number of columns for smaller screens */
+    rows: 5; /* Adjust the number of rows for smaller screens */
+    font-size: 500px;
+}
+}
